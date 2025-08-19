@@ -17,8 +17,7 @@ export type ProductType = {
   ratings_count: string;
   quantity: number;
 };
-const BASE_URL =
-  Platform.OS === "ios" ? "http://localhost:4000" : "http://10.0.2.2:4000";
+const BASE_URL = "http://192.168.1.6:4000";
 export const productsApi = createApi({
   reducerPath: "productsApi",
   baseQuery: fetchBaseQuery({
